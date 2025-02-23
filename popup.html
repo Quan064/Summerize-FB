@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Messenger Summary</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Popup</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h2>Summarize the messages you missed on Messenger</h2>
-  <ul id="summaryList">Loading...</ul>
-  <script src="popup.js"></script>
+    <div class="popup-container">
+        <div class="header">
+            <h2>Đoạn chat</h2>
+            <div class="icons">
+                <span>⚙</span>
+            </div>
+        </div>
+        <div class="chat-list">
+            <!-- Danh sách tin nhắn sẽ được thêm vào đây -->
+        </div>
+        <div class="input-container">
+            <i class="fa-regular fa-bookmark input-icon"></i>
+            <input type="text" id="Input" placeholder='Content'>
+        </div>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
