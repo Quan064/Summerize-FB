@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Summerize MS",
+  "description": "Summarize the messages you missed on Messenger",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "tabs", "scripting", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
