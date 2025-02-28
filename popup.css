@@ -1,6 +1,6 @@
 body {
   width: 350px;
-  background-color: #1c1e21;
+  background-color: #313335;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -52,6 +52,7 @@ h2 {
 
 .chat-item .chat-info {
   flex: 1;
+  font-size: 13px;
 }
 
 .chat-item .chat-info .name {
@@ -61,4 +62,40 @@ h2 {
 .chat-item .chat-info .message {
   color: #b0b3b8;
   font-size: 12px;
+}
+
+input[type="text"] {
+  color: gray;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px 8px 8px 36px; /* Chừa khoảng trống bên trái cho icon */
+  border: 1px solid #b0b3b8;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px; /* Đảm bảo kích thước chữ vừa phải */
+  height: 36px; /* Đồng nhất chiều cao input */
+  background-color: #313335;
+}
+
+.input-container .input-icon {
+  position: absolute;
+  left: 10px; /* Điều chỉnh khoảng cách icon */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Kích thước icon */
+  color: #b0b3b8;
+  pointer-events: none; /* Tránh bị click vào icon */
+  width: 20px; /* Đảm bảo không bị méo */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
 }

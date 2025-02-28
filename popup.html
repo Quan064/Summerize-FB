@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Messenger Popup</title>
     <link rel="stylesheet" href="popup.css">
 </head>
@@ -15,11 +16,13 @@
             </div>
         </div>
         <div class="chat-list">
-            <!-- Danh sách tin nhắn sẽ được thêm vào đây -->
+            <div class="chat-item">
+                <div class="chat-info", style="font-size: medium;">Loading...</div>
+            </div>
         </div>
         <div class="input-container">
             <i class="fa-regular fa-bookmark input-icon"></i>
-            <input type="text" id="Input" placeholder='Content'>
+            <input type="text" class="searchInput" id="searchInput" placeholder='Add link of chat box (Enter)' font-size=12px>
         </div>
     </div>
     <script src="popup.js"></script>
